@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/lib/chatbot.css" />
+  </head>
+  <body>
+    <header>
+    <img alt="Vue logo" class="logo" src="/vite.svg" />
+      <nav>
+        <a href="/" class="active">Home</a>
+        <a href="/about">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page">
+        <h1>This is the <span>home</span> page</h1>
+      </div>
+    </main>
+
+    <div id="chatbot-wrapper">
+      <Chatbot></Chatbot>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="/lib/chatbot.umd.js"></script>
+    <script>
+      ChatbotWidget.install('#chatbot-wrapper')
+    </script>
+  </body>
+</html>
